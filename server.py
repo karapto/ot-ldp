@@ -4,11 +4,11 @@ import time
 
 from simpleByteProtocol import simpleRecv, simpleSend
 from util import pprintResult, saveJsonResult
-from krr import KrrVerifier, buildKrrParams
+from k_rr import KrrVerifier, buildKrrParams
 from normal import NormalVerifier
 
 parser = argparse.ArgumentParser(description='Execute output-secure LDP protocols in Server role.')
-parser.add_argument('--mech', type=str, help="used mechanism [krr] (default: krr)", default="krr")
+parser.add_argument('--mech', type=str, help="used mechanism [k_rr] (default: k_rr)", default="k_rr")
 parser.add_argument('--cate_num', type=int, help="number of cateogories (default: 5)", default=5)
 parser.add_argument('--width', type=int, help="distribution accuracy parameter (default: 100)", default=100)
 parser.add_argument('--epsilon', type=float, help="privacy budget used in LDP protocol (default: 1.0)", default=1.0)
@@ -41,7 +41,7 @@ if __name__ == '__main__':
     epsilon = args.epsilon
     width = args.width
     mech = args.mech
-    if mech == "krr":
+    if mech == "k_rr":
         Verifier = KrrVerifier
         d, l, n, z = buildKrrParams(epsilon, width, categories)
     elif mech == 'normal':
