@@ -107,7 +107,7 @@ class KrrVerifier:
         return self.ak_p1_x_array
 
     def P1_d(self, c_array, s_array, b_array, y_array):
-        print("####### P1 verification #######")
+        print("####### Proof 1: Verification of Data Range 😡 #######")
         for s,c,b,y,x in zip(s_array, c_array, b_array, y_array, self.ak_p1_x_array):
             for i in self.categories:
                 if pow(self.h, s[i], self.q) != b[i] * pow(y * pow(pow(self.g, self.z**i, self.q), -1, self.q) % self.q, c[i], self.q) % self.q:
@@ -125,7 +125,7 @@ class KrrVerifier:
         return self.ak_p2_x_lin
     
     def P2_d(self, s_lin, c_lin, b_lin, y_array):
-        print("####### P2 verification #######")
+        print("####### Proof 2: Verification of Vector Range 🥺 #######")
         commitment = 1
         for y in y_array:
             commitment = commitment * y % self.q
@@ -288,13 +288,13 @@ class KrrProver:
                 if category == mu:
                     c[mu] = x - sum(c)
                     s[mu] = v * c[mu] + random_w
-                    print('x:',x) #delete
-                    print('sum(c)',sum(c)) #delete
-                    print('v:',v) #delete
-                    print('c',c)
-                    print('s',s)
-                    print('c[mu]:',c[mu]) #delete
-                    print('s[mu]:',s[mu]) #delete
+                    #print('x:',x) #delete
+                    #print('sum(c)',sum(c)) #delete
+                    #print('v:',v) #delete
+                    #print('c',c)
+                    #print('s',s)
+                    #print('c[mu]:',c[mu]) #delete
+                    #print('s[mu]:',s[mu]) #delete
 
         return self.c_array, self.s_array
     
