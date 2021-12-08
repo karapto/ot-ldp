@@ -14,6 +14,7 @@ def buildKrrParams(epsilon, width, categories):
     assert (n-l) % (d - 1) == 0, "Invalied combination, n, l, d"
     # print("n: ", n, "l: ", l, "d:", d)
     z = max([l, (n-l)//(d - 1)]) + 1
+    print(l,n,z)
     return d, l, n, z
 
 def decideRatio(eps, d, width):
