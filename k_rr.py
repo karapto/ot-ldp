@@ -18,6 +18,7 @@ def buildKrrParams(epsilon, width, categories):
     return d, l, n, z
 
 def decideRatio(eps, d, width):
+    #Euclidean algorithm
     ratio = np.exp(eps) / ((d-1) + np.exp(eps))
     # print('original p=', ratio)
     integer = int(ratio * width)
