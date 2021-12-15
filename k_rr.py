@@ -37,7 +37,8 @@ class KrrVerifier:
         self.result = {}
     
     def setup(self, security):
-        q = number.getPrime(2 * security, Random.new().read)        
+        q = number.getPrime(2 * security, Random.new().read)    
+        print('security parameter:',security)    
         g = number.getRandomRange(1, q-1)
         h = number.getRandomRange(1, q-1)
         
