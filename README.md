@@ -4,6 +4,10 @@ Comming Soon...
 
 
 ```shell
+pip install -r requirements.txt
+```
+
+```shell
 ./run.sh
 ```
 
