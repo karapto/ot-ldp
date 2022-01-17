@@ -1,9 +1,0 @@
-{
-  "setup time [s]": 0.02610301971435547,
-  "MESSAGE_TYPE.START size [B]": 52,
-  "step2 time [s]": 0.0026009082794189453,
-  "MESSAGE_TYPE.STEP2 size [B]": 41199,
-  "step4 time [s]": 0.30657005310058594,
-  "MESSAGE_TYPE.STEP4 size [B]": 75450,
-  "overall time": 0.7629969120025635
-}
