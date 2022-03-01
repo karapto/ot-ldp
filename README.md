@@ -1,10 +1,14 @@
-# interactive-ldp
+# ZKP-LDP
 
 Comming Soon...
 
+```shell
+ $ docker build . -t ldp-node
+ $ docker container run -it ldp-node bash
+ ```
 
 ```shell
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 ```shell
