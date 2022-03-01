@@ -5,6 +5,7 @@ Comming Soon...
 ```shell
  $ docker build . -t ldp-node
  $ docker container run -it ldp-node bash
+ $ docker compose up -d
  ```
 
 ```shell
