@@ -18,4 +18,4 @@ services:
     tty: true
 
 networks:
-  private:
+ private:
