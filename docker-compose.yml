@@ -6,7 +6,7 @@ services:
     networks:
       - private
     container_name: 'ldp-cli'
-    working_dir: '/zkp-ldp/'
+    working_dir: '/ot-ldp/'
     tty: true
 
   client:
@@ -14,7 +14,7 @@ services:
     networks:
       - private
     container_name: 'ldp-srv'
-    working_dir: '/zkp-ldp/'
+    working_dir: '/ot-ldp/'
     tty: true
 
 networks:

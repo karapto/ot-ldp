@@ -291,13 +291,6 @@ class KrrProver:
                 if category == mu:
                     c[mu] = x - sum(c)
                     s[mu] = v * c[mu] + random_w
-                    #print('x:',x) #delete
-                    #print('sum(c)',sum(c)) #delete
-                    #print('v:',v) #delete
-                    #print('c',c)
-                    #print('s',s)
-                    #print('c[mu]:',c[mu]) #delete
-                    #print('s[mu]:',s[mu]) #delete
 
         return self.c_array, self.s_array
     
